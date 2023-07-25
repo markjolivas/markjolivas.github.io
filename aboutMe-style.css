@@ -90,6 +90,7 @@
     top: 50%; 
     transform: translateY(-50%);
     text-align: left; 
+    margin-left: 30px;
    
     text-shadow: 0 0 5px #0000009a; 
   
