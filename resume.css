@@ -142,3 +142,34 @@ button:hover{
     width: 100%;
     padding: 70px 0;
 }
+
+.resume p{
+    
+    justify-content: center; 
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    background: transparent;
+  
+   
+    font-size: 40px;
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+.resume p{
+    
+    justify-content: center; 
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    background: transparent;
+  
+   
+    font-size: 40px;
+    color: #00abf0;
+    text-decoration: none;
+    
+}
