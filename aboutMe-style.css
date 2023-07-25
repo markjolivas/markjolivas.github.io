@@ -79,66 +79,18 @@
     line-height: 40px;
     
 }
-/*
-button{
-    width: 200px; 
-    padding: 15px 0; 
-    text-align: center;
-    margin: 20px 10px; 
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid #009688;
-    background-color: transparent;
-    color: #fff;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-span{
-    background: #009688;
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
-}
-button:hover span{
-    width: 100%;
 
-}
-button:hover{
-    border: none;
-}
-*/
-.home-sci a{
-    display: inline-flex;
-    justify-content: center; 
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    margin: 10px;
-    background: transparent;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    font-size: 40px;
-    color: #00abf0;
+.aboutme {
     text-decoration: none;
-    transition: .5s;
-    
-}
-.home-sci a:hover{
-    height: 60px;
-    width: 60px;
-    background: #00abf0;
     color: #fff;
-    box-shadow: 0 0 10px #00abf0;
-}
-/*--feature box--*/
-
-#feature{
+    text-transform: uppercase;
     width: 100%;
-    padding: 70px 0;
+    
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%);
+    text-align: left; 
+   
+    text-shadow: 0 0 5px #0000009a; 
+  
 }
