@@ -6,19 +6,61 @@
         <title> Mark's Webpage  </title>
         <link rel="stylesheet" href="projects.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    </head>
-    <body>
-        <div class="banner">
-            <div class = "navbar" > 
-                <img src = "logo.png" class = "logo" href="./index.html">
-                <ul>  
-                    <li><a href= "./index.html">Home</a></li>
-                    <li><a href= "./about.html">About Me</a></li>
-                    <li><a href= "./projects.html">Projects</a></li>
-                    <li><a href= "./resume.html">Resume</a></li>
-                    <li><a href= "./contact.html">Contact</a></li>
-                </ul>
-            </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        </head>
+        <body>
+            <header>
+                <div class="navbar">
+                    <img src="logo.png" class="logo">
+                    <ul class="links">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Me</a></li>
+                        <li><a href="./projects.html">Projects</a></li>
+                        <li><a href="./resume.html">Resume</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                    <div class="toggle_btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <div class="dropdown_menu">
+                    <!-- Move the <ul> inside the dropdown_menu -->
+                    <ul class="links">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Me</a></li>
+                        <li><a href="./projects.html">Projects</a></li>
+                        <li><a href="./resume.html">Resume</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </header>
+            
+        
+        
+                <script>
+                    const toggleBtn = document.querySelector('.toggle_btn');
+                    const toggleBtnIcon = document.querySelector('.toggle_btn i');
+                    const dropDownMenu = document.querySelector('.dropdown_menu');
+            
+                    toggleBtn.onclick = function () {
+                        dropDownMenu.classList.toggle('open');
+                        const isOpen = dropDownMenu.classList.contains('open');
+            
+                        toggleBtnIcon.classList = isOpen
+                            ? 'fa-solid fa-xmark'
+                            : 'fa-solid fa-bars';
+                    };
+            
+                    // Handle the click event for Resume and Contact links inside the dropdown menu
+                    const dropdownLinks = document.querySelectorAll('.dropdown_menu li a');
+                    dropdownLinks.forEach(link => {
+                        link.addEventListener('click', () => {
+                            // Close the dropdown menu after clicking on a link
+                            dropDownMenu.classList.remove('open');
+                            toggleBtnIcon.classList = 'fa-solid fa-bars';
+                        });
+                    });
+                </script> 
    
             <div class=
