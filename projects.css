@@ -173,3 +173,18 @@ header {
     padding: 70px 0;
 }
 
+.projects {
+    
+  color: #fff;
+  text-transform: uppercase;
+  width: 50%;
+  
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%);
+  text-align: left; 
+  margin-left: 30px;
+ 
+  text-shadow: 0 0 10px #0000009a; 
+  
+}
